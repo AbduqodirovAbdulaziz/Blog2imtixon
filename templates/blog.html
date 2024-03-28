@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hamma maqolalar ro'yhati</h1>
+<br>
+<h4>Yangi ma'qola qo'shish</h4>
+<br>
+<br>
+<button>Qo'shish</button>
+<br>
+{% for maqola in maqolalar %}
+    <h2><a href="/bittamaqola/{{maqola.id}}/">{{maqola.sarlavha}}</a></h2>
+{% endfor %}
+<br>
+</body>
+</html>
